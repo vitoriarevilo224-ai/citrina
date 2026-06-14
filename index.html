@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citrina</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="menu">
+            <a href="#">Início</a>
+            <a href="#colecao">Coleção</a>
+            <a href="#sobre">Sobre</a>
+
+            <div class="icone-carrinho" onclick="abrirCarrinho()">
+                🛒 <span id="contador">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>CITRINA</h1>
+        <p>Peças delicadas para quem gosta de carregar significado e personalidade.</p>
+    </header>
+
+    <section id="colecao" class="produtos">
+
+        <div class="card">
+            <img src="solar.png" alt="Anel Solar">
+
+            <div class="info">
+                <h2>Anel Solar</h2>
+                <p>Inspirado na energia do sol.</p>
+
+                <div class="preco">R$ 49,90</div>
+
+                <button class="botao-carrinho" onclick="adicionarCarrinho('Anel Solar')">
+                    Adicionar ao Carrinho
+                </button>
+
+                <a class="botao"
+                    target="_blank"
+                    href="https://wa.me/5548988766007?text=Olá! Tenho interesse no Anel Solar">
+                    Comprar
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="aurora.png" alt="Anel Aurora">
+
+            <div class="info">
+                <h2>Anel Aurora</h2>
+                <p>Inspirado no amanhecer.</p>
+
+                <div class="preco">R$ 49,90</div>
+
+                <button class="botao-carrinho" onclick="adicionarCarrinho('Anel Aurora')">
+                    Adicionar ao Carrinho
+                </button>
+
+                <a class="botao"
+                    target="_blank"
+                    href="https://wa.me/5548988766007?text=Olá! Tenho interesse no Anel Aurora">
+                    Comprar
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="verena.png" alt="Anel Verena">
+
+            <div class="info">
+                <h2>Anel Verena</h2>
+                <p>Elegância e personalidade.</p>
+
+                <div class="preco">R$ 48,90</div>
+
+                <button class="botao-carrinho" onclick="adicionarCarrinho('Anel Verena')">
+                    Adicionar ao Carrinho
+                </button>
+
+                <a class="botao"
+                    target="_blank"
+                    href="https://wa.me/5548988766007?text=Olá! Tenho interesse no Anel Verena">
+                    Comprar
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CARRINHO -->
+
+    <div id="carrinho" class="carrinho">
+
+        <h3>🛒 Seu Carrinho</h3>
+
+        <ul id="listaCarrinho"></ul>
+
+        <div class="resumo-carrinho">
+
+            <div class="linha-resumo">
+                <span>Itens</span>
+                <span id="quantidadeItens">0</span>
+            </div>
+
+            <div class="linha-resumo">
+                <span>Subtotal</span>
+                <span id="subtotal">R$ 0,00</span>
+            </div>
+
+            <div class="linha-resumo">
+                <span>Frete</span>
+                <span>Grátis</span>
+            </div>
+
+            <div class="total-carrinho">
+                <span>Total</span>
+                <span id="total">R$ 0,00</span>
+            </div>
+
+        </div>
+
+        <button class="botao-pagamento" onclick="irParaPagamento()">
+            Finalizar Pedido
+        </button>
+
+        <button class="fechar-carrinho" onclick="fecharCarrinho()">
+            Continuar Comprando
+        </button>
+
+    </div>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre a Citrina</h2>
+        <p>
+            A Citrina transforma acessórios em histórias.
+        </p>
+    </section>
+
+    <footer>
+        © 2026 Citrina
+    </footer>
+
+    <a class="whatsapp"
+        href="https://wa.me/5548988766007"
+        target="_blank">
+        WhatsApp
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
