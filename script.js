@@ -1,7 +1,11 @@
 const precos = {
     "Anel Solar": 49.90,
     "Anel Aurora": 49.90,
-    "Anel Verena": 48.90
+    "Anel Verena": 48.90,
+    "Anel Iris": 49.90,
+    "Choker Aro Mapa do Brasil": 52.90,
+    "Kit Senele": 89.90,
+    "Air Choker": 49.90
 };
 
 let carrinho = [];
